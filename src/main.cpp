@@ -6,8 +6,10 @@
 #define SHORT_SIGNAL 200
 #define LONG_SIGNAL 500
 WebServer server(80);
-const char *ssid = "Xiaomi_76FA";
-const char *password = "gacty4df5";
+// const char *ssid = "Print";
+const char *ssid = "Wokwi-GUEST";
+// const char *password = "N.n.yjdbqDbhs,";
+const char *password = "";
 // put function declarations here:
 
 void sosBlink();
@@ -26,8 +28,6 @@ void setup()
   Serial.println("\nWiFi connected");
   Serial.println(WiFi.localIP());
 }
-
-
 
 void loop()
 {
@@ -48,20 +48,20 @@ void sosBlink()
   digitalWrite(LED_PIN, HIGH);
   delay(SHORT_SIGNAL);
   digitalWrite(LED_PIN, LOW);
-  delay(LONG_SIGNAL);
+  delay(SHORT_SIGNAL);
 
   digitalWrite(LED_PIN, HIGH);
   delay(LONG_SIGNAL);
   digitalWrite(LED_PIN, LOW);
-  delay(LONG_SIGNAL);
+  delay(SHORT_SIGNAL);
   digitalWrite(LED_PIN, HIGH);
   delay(LONG_SIGNAL);
   digitalWrite(LED_PIN, LOW);
-  delay(LONG_SIGNAL);
+  delay(SHORT_SIGNAL);
   digitalWrite(LED_PIN, HIGH);
   delay(LONG_SIGNAL);
   digitalWrite(LED_PIN, LOW);
-  delay(LONG_SIGNAL);
+  delay(SHORT_SIGNAL);
 
   digitalWrite(LED_PIN, HIGH);
   delay(SHORT_SIGNAL);
